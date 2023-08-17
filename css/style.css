@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    margin-top: 20px;
+    text-align: center;
+}
+.menu{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu-pilihan{
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    background-color: #0A6EBD;
+    color: white;
+    border: solid 1px white;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+.menu-pilihan:hover{
+    background-color: #5A96E3;
+}
+.content{
+    margin: 40px 10px;
+    border: solid 4px #0A6EBD;
+    border-radius: 2px;
+    box-shadow: 0px 14px 5px -7px rgba(0,0,0,0.3);
+}
+.head{
+    padding: 30px 0px;
+    background-color: #0A6EBD;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+.gambar{
+    padding: 30px 0px;
+    text-align: center;
+}
+.rumus-luas{
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #000000;
+    font-size: medium;
+}
+.rumus-keliling{
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #000000;
+    font-size: medium;
+}
+#rumus-luas-inti{
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px 0px;
+}
+#rumus-keliling-inti{
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px 0px;
+}
+.hitung{
+    text-align: center;
+    font-size: 36px;
+    padding: 30px 0px;
+}
+label{
+    font-size: medium;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    font-size: 16px;
+    padding: 4px;
+}
+input[type="number"]{
+    border: solid 2px #9DB2BF;
+    border-radius: 6px;
+}
+input[type="number"]:hover{
+    border-color: #0A6EBD;
+}
+input[type="number"]:focus{
+    outline: #5A96E3;
+    border-color: #5A96E3;
+}
+.submit{
+    margin-top: 20px;
+    text-align: center;
+}
+.reset{
+    margin-top: 20px;
+    text-align: right;
+}
+.tombol-submit{
+    font-size: large;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2C74B3;
+    color: white;
+}
+.tombol-submit:hover{
+    background-color: #5A96E3;
+}
+.tombol-reset{
+    padding: 10px;
+    border: solid 1px #FCE700;
+    border-radius: 4px;
+    background-color: #FD841F;
+    color: white;
+}
+.tombol-reset:hover{
+    background-color: #FCE700;
+    color: #FD841F;
+}
+input[type="button"]:active{
+    transform: translateY(1px);
+}
+
+input[type="reset"]:active{
+    transform: translateY(1px);
+}
+.hasil{
+    display: none;
+}
+#hasil-luas-segitiga{
+    margin-top: 10px;
+    border: solid 2px #9DB2BF;
+    border-radius: 6px;
+    padding: 10px 4px;
+    text-align: left;
+    display: none;
+}
+#hasil-keliling-segitiga{
+    margin-top: 10px;
+    border: solid 2px #9DB2BF;
+    border-radius: 6px;
+    padding: 10px 4px;
+    text-align: left;
+    display: none;
+}

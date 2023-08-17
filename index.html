@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR MATEMATIK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 >Welcome to Katik</h1><br>
+        <p>Hai Sobat, Selamat datang di Katik</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </div>
+    <div class="menu">
+            <!-- pilihan menu masih disable -->
+            <a href=""><button class="menu-pilihan">SEGITIGA</button></a>
+            <a href=""><button class="menu-pilihan">JAJARGENJANG</button></a>
+    </div>
+    <main>
+        <div class="content" id="luas-segitiga">
+            <div class="head">
+                LUAS SEGITIGA
+            </div>
+            <div class="gambar">
+                <img src="assets/segitiga.jpeg" alt="segitiga">
+            </div>
+            <div class="rumus-luas">
+                <p>Rumus Luas Segitiga yaitu :</p>
+                <p id="rumus-luas-inti">L = 1/2 x a x t</p>
+                <p>Dimana :</p>
+                <p>L = Luas</p>
+                <p>a = Panjang Alas</p>
+                <p>t = Tinggi</p>
+            </div>
+            <div class="hitung">
+                Hitung Luas Segitiga
+            </div>
+            <div class="rumus-luas">
+                <form class="input">
+                    <label for="input-alas">Alas :</label>
+                    <input type="number" placeholder="0" id="input-alas" name="alas-segitiga">
+                    <label for="input-tinggi">Tinggi :</label>
+                    <input type="number" placeholder="0" id="input-tinggi" name="tinggi-segitiga">
+                    <div class="hasil" id="hasil-luas-segitiga">
+                        <!-- hasil perhitungan luas segitiga -->
+                    </div>
+                    <div class="submit">
+                        <input type="button" value="Hitung" class="tombol-submit" onclick="luas_segitiga()">
+                    </div>
+                    <div class="reset">
+                        <input type="reset" value="Reset" class="tombol-reset" onclick="resetForm('hasil-luas-segitiga')">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="content" id="keliling-segitiga">
+            <div class="head">
+                Keliling SEGITIGA
+            </div>
+            <div class="gambar">
+                <img src="assets/segitiga.jpeg" alt="segitiga">
+            </div>
+            <div class="rumus-keliling">
+                <p>Rumus Keliling Segitiga yaitu :</p>
+                <p id="rumus-keliling-inti">K = S1 + S2 + S3</p>
+                <p>Dimana :</p>
+                <p>K = Keliling</p>
+                <p>S1 = Sisi A-B</p>
+                <p>S2 = Sisi A-C</p>
+                <p>S3 = Sisi B-C</p>
+            </div>
+            <div class="hitung">
+                Hitung Keliling Segitiga
+            </div>
+            <div class="rumus-keliling">
+                <form class="input">
+                    <label for="i-s1">S1 :</label>
+                    <input type="number" placeholder="0" name="s1-segitiga">
+                    <label for="i-s2">S2 :</label>
+                    <input type="number" placeholder="0" name="s2-segitiga">
+                    <label for="i-s3">S3 :</label>
+                    <input type="number" placeholder="0" name="s3-segitiga">
+                    <div class="hasil" id="hasil-keliling-segitiga">
+                        <!-- hasil perhitungan keliling segitiga -->
+                    </div>
+                    <div class="submit">
+                        <input type="button" value="Hitung" class="tombol-submit" onclick="keliling_segitiga()">
+                    </div>
+                    <div class="reset">
+                        <input type="reset" value="Reset" class="tombol-reset" onclick="resetForm('hasil-keliling-segitiga')">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
